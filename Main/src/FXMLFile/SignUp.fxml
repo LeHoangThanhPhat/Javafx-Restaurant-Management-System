@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="applicationController">
+   <top>
+      <AnchorPane prefHeight="50.0" prefWidth="716.0" style="-fx-background-color: #c08f6e;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="280.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="WHITE" glyphName="IMAGE" layoutX="442.0" layoutY="47.0" size="20" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="82.0" layoutY="91.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Fullname" textFill="#c08f6e">
+               <font>
+                  <Font name=".VnAvantH Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="131.0" text="Day Of Birth" textFill="#c08f6e">
+               <font>
+                  <Font name=".VnAvantH Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="252.0" text="E-mail" textFill="#c08f6e">
+               <font>
+                  <Font name=".VnAvantH Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="171.0" text="Phone Number" textFill="#c08f6e">
+               <font>
+                  <Font name=".VnAvantH Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="211.0" text="Address" textFill="#c08f6e">
+               <font>
+                  <Font name=".VnAvantH Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="297.0" text="Password" textFill="#c08f6e">
+               <font>
+                  <Font name=".VnAvantH Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="337.0" text="Confirm Password" textFill="#c08f6e">
+               <font>
+                  <Font name=".VnAvantH Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="112.0" layoutY="384.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" style="-fx-background-color: #c08f6e;" text="OK" textFill="WHITE" />
+            <Button layoutX="542.0" layoutY="384.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" style="-fx-background-color: #c08f6e;" text="Close" textFill="WHITE" />
+            <Button layoutX="327.0" layoutY="384.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" style="-fx-background-color: #c08f6e;" text="Reset" textFill="WHITE" />
+            <TextField layoutX="272.0" layoutY="91.0" prefHeight="27.0" prefWidth="322.0" promptText="Fullname" />
+            <TextField layoutX="272.0" layoutY="131.0" prefHeight="27.0" prefWidth="322.0" promptText="dd-mm-yy" />
+            <TextField layoutX="272.0" layoutY="171.0" prefHeight="27.0" prefWidth="322.0" promptText="+84" />
+            <TextField layoutX="272.0" layoutY="211.0" prefHeight="27.0" prefWidth="322.0" promptText="Where do you live ?" />
+            <TextField layoutX="272.0" layoutY="252.0" prefHeight="27.0" prefWidth="322.0" promptText="example@example.com.vn" />
+            <PasswordField layoutX="272.0" layoutY="294.0" prefHeight="20.0" prefWidth="322.0" promptText="****************" />
+            <PasswordField layoutX="272.0" layoutY="334.0" prefHeight="20.0" prefWidth="322.0" promptText="****************" />
+            <Text fill="#c08f6e" layoutX="223.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P">
+               <font>
+                  <Font name=".VnArabiaH" size="40.0" />
+               </font>
+            </Text>
+            <Text fill="#c08f6e" layoutX="251.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="lease fill in the information">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

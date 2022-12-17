@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Hyperlink layoutX="113.0" layoutY="433.0" text="Forgot Your Password ?" textFill="#c08f6e" />
+            <TextField floatText="Username" layoutX="102.0" layoutY="148.0" prefHeight="36.0" prefWidth="200.0" style="-fx-border-color: #c08f6e; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField layoutX="102.0" layoutY="250.0" prefHeight="26.0" prefWidth="200.0" promptText="Password" style="-fx-border-color: #c08f6e; -fx-border-width: 0px 0px 2px 0px;" />
+            <FontAwesomeIconView fill="#c08f6e" glyphName="USER" layoutX="64.0" layoutY="184.0" size="20" wrappingWidth="22.5" />
+            <FontAwesomeIconView fill="#c08f6e" glyphName="KEY" layoutX="65.0" layoutY="275.0" size="20" />
+            <Button layoutX="103.0" layoutY="307.0" mnemonicParsing="false" style="-fx-background-color: #c08f6e;" text="Login" textAlignment="CENTER" textFill="#c08f6e">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <FontAwesomeIconView fill="#c08f6e" glyphName="USER" layoutX="173.0" layoutY="80.0" size="40" />
+            <Text fill="#c08f6e" layoutX="141.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="329.0" minWidth="22.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="22.0" style="-fx-background-color: #c08f6e;" textFill="#c08f6e">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CLOSE" />
+               </graphic>
+            </Button>
+            <Button layoutX="243.0" layoutY="307.0" mnemonicParsing="false" style="-fx-background-color: #c08f6e;" text="Sign Up" textAlignment="CENTER" textFill="#c08f6e">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <VBox alignment="CENTER" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #c08f6e;" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="LOCK" size="80" textAlignment="CENTER" wrappingWidth="64.55000019073486">
+               <effect>
+                  <Glow />
+               </effect>
+            </FontAwesomeIconView>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="R" textAlignment="CENTER">
+                     <font>
+                        <Font name=".VnArabia" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="egist" textAlignment="CENTER">
+                     <font>
+                        <Font name=".VnBook Antiqua Bold" size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="R" textAlignment="CENTER">
+                     <font>
+                        <Font name=".VnArabia" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="estaurant" textAlignment="CENTER">
+                     <font>
+                        <Font name=".VnBook Antiqua Bold" size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="since 2022">
+               <font>
+                  <Font name=".VnArabia" size="15.0" />
+               </font>
+            </Text>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button minHeight="4.0" minWidth="5.0" mnemonicParsing="false" prefHeight="4.0" prefWidth="5.0" style="-fx-background-color: white;">
+                     <graphic>
+                        <Hyperlink textFill="#c08f6e">
+                           <graphic>
+                              <FontAwesomeIconView fill="#c08f6e" glyphName="INSTAGRAM" selectionFill="BLACK" />
+                           </graphic>
+                        </Hyperlink>
+                     </graphic>
+                  </Button>
+                  <Button minHeight="4.0" minWidth="5.0" mnemonicParsing="false" prefHeight="4.0" prefWidth="5.0" style="-fx-background-color: white;">
+                     <graphic>
+                        <Hyperlink textFill="#c08f6e">
+                           <graphic>
+                              <FontAwesomeIconView fill="#c08f6e" glyphName="FACEBOOK" selectionFill="BLACK" />
+                           </graphic>
+                        </Hyperlink>
+                     </graphic>
+                  </Button>
+                  <Button minHeight="4.0" minWidth="5.0" mnemonicParsing="false" prefHeight="4.0" prefWidth="5.0" style="-fx-background-color: white;">
+                     <graphic>
+                        <Hyperlink textFill="#c08f6e">
+                           <graphic>
+                              <FontAwesomeIconView fill="#c08f6e" glyphName="MAP" selectionFill="BLACK" />
+                           </graphic>
+                        </Hyperlink>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
