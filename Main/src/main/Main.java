@@ -15,10 +15,10 @@ import javafx.stage.Stage;
  * @author Admin
  */
 public class Main extends Application {
-    
+    //FXMLDocument
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/FXMLFile/StaffScene.fxml"));
         
         Scene scene = new Scene(root);
         
