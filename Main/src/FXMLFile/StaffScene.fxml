@@ -12,7 +12,6 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -20,7 +19,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLController.StaffSceneController">
    <center>
-      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+      <TabPane prefHeight="200.0" prefWidth="200.0" stylesheets="@../main/application.css" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
         <tabs>
           <Tab text="Menu">
                <content>
@@ -28,9 +27,12 @@
                      <center>
                         <TableView prefHeight="412.0" prefWidth="503.0" BorderPane.alignment="CENTER">
                           <columns>
-                            <TableColumn prefWidth="75.0" text="DishName" />
-                            <TableColumn prefWidth="75.0" text="DishPrice" />
+                            <TableColumn id="Login" prefWidth="75.0" text="DishName" />
+                            <TableColumn id="Login" prefWidth="75.0" text="DishPrice" />
                           </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
                         </TableView>
                      </center>
                      <left>
@@ -50,9 +52,9 @@
                               <TextField />
                               <Label text="Quantity" />
                               <Spinner />
-                              <Button mnemonicParsing="false" text="Add" />
-                              <Button mnemonicParsing="false" text="Remove" />
-                              <Button mnemonicParsing="false" text="Delete" />
+                              <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" text="Add" />
+                              <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" text="Remove" />
+                              <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" text="Delete" />
                            </children>
                         </VBox>
                      </right>
@@ -76,7 +78,7 @@
                                     <TextField />
                                     <Label text="People" />
                                     <Spinner />
-                                    <Button mnemonicParsing="false" text="Send" />
+                                    <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" text="Send" />
                                  </children>
                               </VBox>
                            </right>
@@ -91,10 +93,13 @@
                      <center>
                         <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                           <columns>
-                            <TableColumn prefWidth="75.0" text="DishName" />
+                            <TableColumn id="Login" prefWidth="75.0" text="DishName" />
                             <TableColumn prefWidth="104.6667251586914" text="DishQuantity" />
                               <TableColumn prefWidth="111.77772521972656" text="DishPrice" />
                           </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
                         </TableView>
                      </center>
                      <right>
@@ -118,7 +123,7 @@
                   </BorderPane>
                </content>
             </Tab>
-            <Tab text="Book">
+            <Tab style="-fx-text-fill: black;" text="Book">
                <content>
                   <BorderPane prefHeight="200.0" prefWidth="200.0">
                      <center>
@@ -129,14 +134,17 @@
                               <TableColumn prefWidth="122.88880920410156" text="CustomerName" />
                               <TableColumn minWidth="6.0" prefWidth="103.11117553710938" text="BookCatalogies" />
                           </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
                         </TableView>
                      </center>
                      <right>
                         <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
                            <children>
-                              <Button mnemonicParsing="false" text="New " />
-                              <Button mnemonicParsing="false" text="Delete" />
-                              <Button mnemonicParsing="false" text="Update" />
+                              <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" text="New " />
+                              <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" text="Delete" />
+                              <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" text="Update" />
                            </children></VBox>
                      </right>
                      <bottom>
@@ -153,7 +161,7 @@
                            <right>
                               <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
                                  <children>
-                                    <Button mnemonicParsing="false" text="Done" />
+                                    <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" text="Done" />
                                  </children></VBox>
                            </right>
                            <bottom>
@@ -167,15 +175,12 @@
                      </bottom>
                   </BorderPane>
                </content>
-               <graphic>
-                  <Label text="2" />
-               </graphic>
             </Tab>
             <Tab text="Inventory">
                <content>
                   <BorderPane prefHeight="200.0" prefWidth="200.0">
                      <center>
-                        <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                        <TableView prefHeight="542.0" prefWidth="592.0" BorderPane.alignment="CENTER">
                            <columns>
                               <TableColumn prefWidth="75.0" text="ID" />
                               <TableColumn prefWidth="75.0" text="Name" />
@@ -184,6 +189,9 @@
                               <TableColumn prefWidth="75.0" text="Price" />
                               <TableColumn prefWidth="75.0" text="Catalogies" />
                            </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
                         </TableView>
                      </center>
                      <right>
@@ -199,9 +207,9 @@
                               <TextField />
                               <Label text="Catalogies" />
                               <ComboBox prefWidth="150.0" />
-                              <Button mnemonicParsing="false" text="Create" />
-                              <Button mnemonicParsing="false" text="Update" />
-                              <Button mnemonicParsing="false" text="Delete" />
+                              <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" text="Create" />
+                              <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" text="Update" />
+                              <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" text="Delete" />
                            </children>
                         </VBox>
                      </right>
@@ -221,10 +229,13 @@
                               <TableColumn prefWidth="75.0" text="Possition" />
                               <TableColumn prefWidth="75.0" text="Salary" />
                            </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
                         </TableView>
                      </center>
                      <right>
-                        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
                            <children>
                               <Label text="Name" />
                               <TextField />
@@ -236,9 +247,9 @@
                               <ComboBox prefWidth="150.0" />
                               <Label text="Salary" />
                               <TextField />
-                              <Button mnemonicParsing="false" text="Create" />
-                              <Button mnemonicParsing="false" text="Update" />
-                              <Button mnemonicParsing="false" text="Delete" />
+                              <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" text="Create" />
+                              <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" text="Update" />
+                              <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" text="Delete" />
                            </children>
                         </VBox>
                      </right>
@@ -257,6 +268,9 @@
                               <TableColumn prefWidth="75.0" text="Price" />
                               <TableColumn prefWidth="75.0" text="Note" />
                           </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
                         </TableView>
                      </center>
                      <bottom>
@@ -276,9 +290,9 @@
                               <TextField />
                               <Label text="Note" />
                               <TextArea prefHeight="200.0" prefWidth="200.0" />
-                              <Button mnemonicParsing="false" text="Create" />
-                              <Button mnemonicParsing="false" text="Delete" />
-                              <Button mnemonicParsing="false" text="Update" />
+                              <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" text="Create" />
+                              <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" text="Delete" />
+                              <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" text="Update" />
                            </children>
                         </VBox>
                      </right>
@@ -297,6 +311,9 @@
                               <TableColumn prefWidth="75.0" text="Price" />
                               <TableColumn prefWidth="75.0" text="Note" />
                           </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
                         </TableView>
                      </center>
                      <bottom>
@@ -316,9 +333,9 @@
                               <TextField layoutX="10.0" layoutY="27.0" />
                               <Label text="Note" />
                               <TextArea prefHeight="200.0" prefWidth="200.0" />
-                              <Button mnemonicParsing="false" text="Create" />
-                              <Button mnemonicParsing="false" text="Delete" />
-                              <Button mnemonicParsing="false" text="Update" />
+                              <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" text="Create" />
+                              <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" text="Delete" />
+                              <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" text="Update" />
                            </children>
                         </VBox>
                      </right>
@@ -344,6 +361,9 @@
                             <TableColumn prefWidth="75.0" text="CodeValue" />
                               <TableColumn prefWidth="98.4444580078125" text="CodeQuantity" />
                           </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
                         </TableView>
                      </center>
                      <right>
@@ -353,9 +373,9 @@
                               <TextField />
                               <Label layoutX="10.0" layoutY="10.0" text="Password" />
                               <TextField layoutX="10.0" layoutY="27.0" />
-                              <Button mnemonicParsing="false" text="New Code" />
-                              <Button mnemonicParsing="false" text="Delete Code" />
-                              <Button mnemonicParsing="false" text="Update Code" />
+                              <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="100.0" text="New Code" />
+                              <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="100.0" text="Delete Code" />
+                              <Button id="button" mnemonicParsing="false" prefHeight="38.0" prefWidth="100.0" text="Update Code" />
                            </children>
                         </VBox>
                      </right>
@@ -373,6 +393,9 @@
                               <TableColumn prefWidth="75.0" text="Level" />
                               <TableColumn prefWidth="75.0" text="Message" />
                           </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
                         </TableView>
                      </center>
                   </BorderPane>
@@ -384,11 +407,6 @@
    <left>
       <VBox alignment="CENTER" prefHeight="600.0" prefWidth="173.0" spacing="20.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../image/StaffSceneIcon.png" />
-               </image>
-            </ImageView>
             <Label text="Hello" />
             <Label fx:id="lbUser" text="Master" />
          </children>

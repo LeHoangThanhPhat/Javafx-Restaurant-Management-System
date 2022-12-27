@@ -1,2 +1,9 @@
-mã màu :  #c08f6e
+
 11 37 +40
+hover chữ đen màu xanh
+background trắng #ffffff
+themes xám : F7F7F7
+
+Tên nhà hàng : Gourmet
+Chủ đề: món âu
+font : Times New Roman

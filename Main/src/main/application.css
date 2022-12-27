@@ -1,0 +1,53 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Dec 18, 2022, 6:54:54 PM
+    Author     : HP
+
+*/
+#header{
+    -fx-font: Times New Roman;
+    -fx-text-fill: black;
+    -fx-font-size: 40px;
+    -fx-background-color: white;
+}
+#Login{
+    -fx-font: Times New Roman;
+    -fx-text-fill: black;
+    -fx-font-size: 20px;
+    -fx-font-color: black;
+    -fx-text-alignment: center;
+}
+#LoginText{
+    -fx-font-color: black;
+
+}
+#button{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-background-radius: 10px;
+    -fx-background-size: 64px 38px;
+}
+
+#button:hover {
+    -fx-background-color: blue;
+    
+}
+#hyperlink{
+    -fx-text-fill: black;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-border-color: black;
+    
+}
+#Forgotpassword{
+    -fx-font: Times New Roman;
+    -fx-text-fill: black;
+    -fx-font-size: 15px;    
+    -fx-background-color: white;
+}
+#table-pane{
+    -fx-alignment: center;
+    -fx-background-color: black;
+}

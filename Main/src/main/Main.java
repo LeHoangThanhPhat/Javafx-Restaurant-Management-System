@@ -23,6 +23,7 @@ public class Main extends Application {
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
         stage.show();
     }
 
